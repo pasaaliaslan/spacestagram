@@ -1,38 +1,146 @@
 .App {
+  margin: 0;
+  padding: 0;
+  position: relative;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  align-items: center;
+  color: white;
   min-height: 100vh;
+}
+
+/* ============== HEADER STYLE ============== */
+header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+header h1 {
+  font-size: 64px;
+}
+
+header h4 {
+  font-size: 16px;
+}
+
+/* ============== FOOTER STYLE ============== */
+footer {
+  position: absolute;
+  bottom: 0;
+  width:100%;
+  height: 32px;
+}
+
+.App .content {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  justify-content: center;
+  padding-bottom: 64px;
+}
+
+.container {
+  display: inline-block;
+  margin: 0px;
+  width: 544px;
+  background-color: white;
+  border-radius: 16px;
+  color: #2e3d59;
+  font-size: 14px;
+  align-items: center;
+  text-align: left;
+  padding: 16px;
+}
+
+.dashboardInputContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding-bottom: 16px;
+}
+
+.dashboardInputContainer .dateInput {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.dashboardInputContainer .dateInput h6 {
+  margin: 0px;
+}
+
+.spaceImage {
+  height: auto;
+  max-height: 512px;
+  width: 512px;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+
+.titlerow {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.titlerow h4 {
+  max-width: 256px;
+}
+
+.likeRefreshShare {
+  display: flex;
+  width: 128px;
+  justify-content: space-between;
+}
+
+/* ============== IMAGE LIST STYLE ============== */
+.imageListContainer {
+  display: inline-block;
+  width: 544px;
+  height: 544px;
+  background-color: white;
+  border-radius: 16px;
+  color: #2e3d59;
+  font-size: 14px;
+  align-items: center;
+  text-align: left;
+  padding: 16px;
+  overflow: scroll;
+}
+
+/* ============== IMAGE LIST ITEM STYLE ============== */
+.imageListItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.imageListItem .content {
+  padding: 0px;
+  display: flex;
+  gap: 16px;
+}
+
+.imageListItem .content .image {
+  display: inline-block;
+  height: auto;
+  width: 128px;
+}
+
+.imageListItem .info {
+  display: inline-block;
+}
+
+.imageListItem .buttons {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 4px;
+  float: inline-end;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.imageListItem button {
+  width: 40px;
+  height: 40px;
 }
