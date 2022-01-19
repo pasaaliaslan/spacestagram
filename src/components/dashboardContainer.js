@@ -99,6 +99,9 @@ function DashboardContainer() {
                         selected={stringToDate(media.date)}
                         dateFormat="yyyy-MM-dd"
                         onChange={(date) => onDateInput(date)}
+                        minDate={new Date("01-01-2015")}
+                        maxDate={new Date()}
+                        showYearDropdown
                     />
                 </div>
                 <button className="btn btn-primary" onClick={() => getMedia(0, "")}>Today's Image</button>
